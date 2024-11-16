@@ -1,6 +1,11 @@
 import './bootstrap';
-import { createApp } from 'vue'
+import { createApp } from 'vue';
+import ImageViewer from "./components/ImageViewer.vue";
 
-const app = createApp()
+const app = createApp({
+    components: {
+        ImageViewer,
+    }
+})
 
 app.mount('#app')
